@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Form</title>
+    </head>
+    <body>
+        <form onsubmit="return validateForm()">
+            Email:
+            <input type ="email" id="Email">
+            <br><br>
+            Password:
+            <input type ="password" id="Password">
+            <br><br>
+            <input type ="submit" value="Login">
+        </form>
+        <script>
+            function validateForm(){
+                var email = document.getElementById("Email").value;
+                let password = document.getElementById("Password").value;
+                if (email==""){
+                    alert("Please Enter Email");
+                    return false;
+                }
+                if (password=""){
+                    alert("PLease Enter password");
+                    return false;
+                }
+                if(email==("mithra769@gmail.com") & password == ("130408")){
+                    alert ("Login Successful");
+            }
+                
+                return false;
+            }
+
+        </script>
+    </body>
+</html>
